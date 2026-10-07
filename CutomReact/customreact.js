@@ -1,5 +1,3 @@
-const { Children } = require("react");
-
 function customRender(reactElement,container){
     // const domElement = document.createElement(reactElement.type)
     // domElement.innerHTML= reactElement.Children;
@@ -7,7 +5,6 @@ function customRender(reactElement,container){
     // domElement.setAttribute('target', reactElement.props.target)
 
     // container.appendChild(domElement)
-
     const domElement = document.createElement(reactElement.type);
     domElement.innerHTML=reactElement.Children;
 
@@ -18,7 +15,6 @@ function customRender(reactElement,container){
     }
     container.appendChild(domElement);
 }
-
 const reactElement = {
         type: 'a',
         props: {
